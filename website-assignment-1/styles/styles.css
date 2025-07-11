@@ -180,3 +180,77 @@ body {
   font-size: 14px;
   color: #6b7280;
 }
+/* ─────────  Feedback Section  ───────── */
+.feedback-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.feedback-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  max-width: 280px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: #facc15;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.feedback-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.feedback-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-info {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.reviewer-info strong {
+  display: block;
+  font-weight: 600;
+  color: #1f2937;
+}
