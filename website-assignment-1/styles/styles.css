@@ -107,3 +107,41 @@ body {
 .focus-btn:hover::before {
   opacity: 1;              /* glowing border appears */
 }
+/* ─────────  Action Section  ───────── */
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #f8f9ff;
+}
+
+.action-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.action-left p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Launch Preview Button — scale and pulse on hover */
+.action-left button {
+  background-color: #4f46e5;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.action-left button:hover {
+  background-color: #3a38c9;
+  transform: scale(1.05);
+}
