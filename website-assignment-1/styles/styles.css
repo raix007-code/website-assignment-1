@@ -10,3 +10,100 @@ body {
   background-color: #f8f9ff;
   color: #1a1a1a;
 }
+
+/* ─────────  Navbar  ───────── */
+.navbar {
+  background-image: url("../assets/Hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4c4cff;
+}
+
+/* signup button ‑ slide‑arrow hover */
+.signup-btn {
+  position: relative;
+  padding: 10px 40px 10px 20px;   /* extra right padding for arrow */
+  background-color: #4c4cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  overflow: hidden;
+  transition: background-color .3s ease;
+}
+
+.signup-btn::after {
+  content: "→";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  transition: right .3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #3a3ad1;
+}
+
+.signup-btn:hover::after {
+  right: 12px;             /* arrow slides in */
+}
+
+/* ─────────  Banner / Hero  ───────── */
+.banner {
+  background-image: url("../assets/banner.png"); /* নিজের ইমেজ দিলে path বদলান */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* focus button – glow border hover */
+.focus-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4c4cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color .3s ease;
+  z-index: 1;
+}
+
+.focus-btn::before {
+  content: "";
+  position: absolute;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #4c4cff, #00eaff);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .3s ease;
+}
+
+.focus-btn:hover {
+  background-color: #3a3ad1;
+}
+
+.focus-btn:hover::before {
+  opacity: 1;              /* glowing border appears */
+}
