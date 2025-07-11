@@ -61,7 +61,7 @@ body {
 
 /* ─────────  Banner / Hero  ───────── */
 .banner {
-  background-image: url("../assets/banner.png"); /* নিজের ইমেজ দিলে path বদলান */
+  background-image: url("../assets/banner.png");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -144,4 +144,39 @@ body {
 .action-left button:hover {
   background-color: #3a38c9;
   transform: scale(1.05);
+}
+
+
+/* ─────────  User Stats Section  ───────── */
+.users-section {
+  background-color: #e8eaff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 40px;
+}
+
+.users-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 6px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #6b7280;
 }
